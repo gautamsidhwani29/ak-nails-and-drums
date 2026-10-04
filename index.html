@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AK Nails And Drums Manufacturing</title>
@@ -195,14 +196,26 @@ header.sc{box-shadow:0 6px 24px rgba(0,0,40,.12)}
 <div class="contact" style="margin-top:44px">
 <div class="info"><p><small>Business</small>AK Nails And Drums Manufacturing</p><p><small>Phone</small>+91 00000 00000</p><p><small>Email</small>info@aksteelhub.com</p><p><small>Address</small>Your factory address, City, State, India</p></div>
 <form action="https://api.web3forms.com/submit" method="POST">
-<input type="hidden" name="access_key" value="8d4549d3-afca-4b21-94ec-9dec6518832c">
-<input type="hidden" name="subject" value="New enquiry from AK Nails And Drums website">
-<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-<label>Name<input name="name" required></label>
-<label>Phone<input name="phone" required></label>
-<label>Product<select name="product"><option>Nails</option><option>Drums</option><option>Both</option></select></label>
-<label>Details<textarea name="message" rows="4" placeholder="Quantity, size and other details"></textarea></label>
-<button class="btn" type="submit">Send enquiry</button></form>
+  <input type="hidden" name="access_key" value="7e3347a5-fee1-4050-9cc7-03bc42f043fb">
+  <input type="hidden" name="redirect" value="https://aksteelhub.com/thanks.html">
+  <input type="hidden" name="subject" value="New enquiry from AK Nails And Drums website">
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+  <label>Name<input name="name" autocomplete="name" required></label>
+  <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+  <label>Email (optional)<input name="email" type="email" autocomplete="email"></label>
+  <label>Product
+    <select name="product">
+      <option>Nails</option>
+      <option>Drums</option>
+      <option>Both</option>
+    </select>
+  </label>
+  <label>Details<textarea name="message" rows="4" placeholder="Quantity, size and other details" required></textarea></label>
+  <div class="h-captcha" data-captcha="true"></div>
+
+  <button class="btn" type="submit">Send enquiry</button>
+</form>
 </div></div></section>
 
 <footer><div class="w"><div class="g">

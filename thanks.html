@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Enquiry received | AK Nails And Drums Manufacturing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#009999;--navy:#000028;--teal:#5fd4d4;--mute:#c5cde0;box-sizing:border-box}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,sans-serif;line-height:1.6;color:#fff;
+  background:radial-gradient(circle at 78% 45%,#00506a 0,#000028 62%) fixed;
+  display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+.w{max-width:1200px;margin:0 auto;padding:0 28px;width:100%}
+.bar{display:flex;align-items:center;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:1.1rem;letter-spacing:-.01em}
+.logo b{width:34px;height:34px;border-radius:6px;background:var(--p);display:grid;place-items:center;font-size:.9rem}
+main{flex:1;display:flex;align-items:center;padding:30px 0 60px}
+.box{max-width:620px}
+.tick{width:84px;height:84px;margin-bottom:28px}
+.tick circle{fill:none;stroke:var(--teal);stroke-width:3;stroke-dasharray:252;stroke-dashoffset:252;animation:draw .7s ease-out .1s forwards}
+.tick path{fill:none;stroke:var(--teal);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:50;stroke-dashoffset:50;animation:draw .4s ease-out .7s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+h1{margin:0;font-weight:600;letter-spacing:-.02em;line-height:1.12;font-size:clamp(2.2rem,5vw,3.6rem)}
+.lead{font-size:1.2rem;color:var(--mute);margin:20px 0 34px;max-width:520px}
+.steps{display:grid;gap:14px;margin:0 0 38px;padding:0;list-style:none}
+.steps li{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.05);border-radius:12px;padding:16px 20px}
+.steps b{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:.9rem;background:rgba(255,255,255,.12);color:#fff}
+.steps li.done b{background:var(--teal);color:var(--navy)}
+.steps strong{display:block;font-weight:600}
+.steps span{color:var(--mute);font-size:.95rem}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;background:var(--p);color:#fff;padding:14px 30px;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;border:2px solid var(--p)}
+.btn:hover{background:#007d7d;border-color:#007d7d}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.mail{color:var(--mute);font-size:.95rem}
+.mail a{color:#fff;font-weight:600}
+footer{color:#b3bcd0;font-size:.9rem;padding:22px 0;border-top:1px solid #2a3150}
+@media (prefers-reduced-motion:reduce){.tick circle,.tick path{animation:none;stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="w bar"><a class="logo" href="/"><b>AK</b>Nails &amp; Drums</a></div>
+</header>
+
+<main>
+  <div class="w">
+    <div class="box">
+      <svg class="tick" viewBox="0 0 84 84" aria-hidden="true">
+        <circle cx="42" cy="42" r="40"/>
+        <path d="M26 43l11 11 21-23"/>
+      </svg>
+      <h1>We have your enquiry.</h1>
+      <p class="lead">Thank you for contacting AK Nails And Drums. We will review what you need and send you a clear quote.</p>
+
+      <ol class="steps">
+        <li class="done"><b>1</b><div><strong>Enquiry received</strong><span>Your details are with our team.</span></div></li>
+        <li><b>2</b><div><strong>Quote</strong><span>We get back to you with a price.</span></div></li>
+        <li><b>3</b><div><strong>Production and dispatch</strong><span>Made to your requirements and delivered on time.</span></div></li>
+      </ol>
+
+      <div class="row">
+        <a class="btn" href="/">Back to home</a>
+        <span class="mail">Need to add something? Email <a href="mailto:info@aksteelhub.com">info@aksteelhub.com</a></span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer><div class="w">&copy; 2026 AK Nails And Drums Manufacturing</div></footer>
+</body>
+</html>
